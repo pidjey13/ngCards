@@ -1,0 +1,21 @@
+.card {
+  border: blue;
+  border-style: solid;
+  padding: 1em;
+  margin-bottom: 1em;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  max-width: 900px;
+  border-radius: 5px;
+  background-color: lightblue;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.card .price {
+  font-weight: 600;
+}

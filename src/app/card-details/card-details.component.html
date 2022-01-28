@@ -1,0 +1,29 @@
+<div *ngIf="product" class="card-detail">
+
+  <h3>
+    {{ product.title }}
+  </h3>
+
+  <p>
+    Description: {{ product.description }}
+  </p>
+
+  <div class="card-detail-price">
+    <span class="price">
+      <b>Price: {{ product.price | currency:'EUR' }}</b>
+    </span>
+
+    <span>
+      <b>Category: </b><i>{{ product.category }}</i>
+    </span>
+  </div>
+
+  <div class="img-container">
+    <img src="{{ product.image}}" />
+  </div>
+
+  <p>{{ product.rating.rate | stars:product.rating.count }}</p>
+
+</div>
+
+<button (click)="goBack()">Go back</button>
